@@ -33,7 +33,7 @@ pipeline {
                 docker stop todo-app || true
                 docker rm todo-app || true
                 
-                docker run -d \--name todo-app -p 8000:8000 todo-app
+                docker run -d \ --name todo-app -p 8000:8000 todo-app
                 '''
             }
         }
