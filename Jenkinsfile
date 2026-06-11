@@ -23,7 +23,7 @@ pipeline {
 
         stage('Docker Build') {
             steps {
-                sh 'docker build -t todo-app .'
+                sh '/opt/homebrew/bin/docker build -t todo-app .'
             }
         }
 
